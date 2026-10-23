@@ -1,0 +1,25 @@
+/* Texto proporcional e independiente del fondo, sin estirar imágenes. */
+#covers{position:fixed;inset:0;z-index:30;background:linear-gradient(#050707 45%,#a62d27);opacity:1;transition:opacity .6s ease;overflow:hidden;isolation:isolate}
+#covers[hidden]{display:none}#covers.is-leaving{opacity:0;pointer-events:none}
+.cover-page{position:absolute;inset:0;z-index:1;background:transparent;opacity:0;visibility:hidden;transition:opacity .8s ease,visibility .8s;cursor:pointer;touch-action:manipulation;outline:none}
+.cover-page.is-current{opacity:1;visibility:visible}.cover-page[data-cover="story"]{cursor:default}
+.cover-page:focus-visible:after{content:'';position:absolute;inset:12px;border:1px solid #e9ddd466;pointer-events:none}
+.cover-page .cover-frame{position:absolute;left:50%;top:50%;width:min(100vw,46.1875svh);height:auto;aspect-ratio:739/1600;transform:translate(-50%,-50%);overflow:visible;background:transparent}
+.cover-page .cover-frame img{position:absolute;left:0;top:0;width:100%;height:auto!important;max-width:none;max-height:none;aspect-ratio:739/1600;object-fit:contain;display:block;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.cover-fragment{filter:url(#cover-white);opacity:0;animation:none}
+.cover-page.is-current .cover-fragment{animation:inkAppear .85s cubic-bezier(.2,.65,.3,1) var(--delay) both}
+.cover-page[data-cover="instructions"].is-current .cover-fragment{animation-delay:calc(var(--delay) + .8s)}
+@keyframes inkAppear{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+/* Fondo sin imagen rectangular: sus manchas exceden todos los bordes. */
+.cover-backdrop{position:absolute;left:-25%;top:-25%;width:150%;height:170%;z-index:0;pointer-events:none;overflow:hidden;background:linear-gradient(to bottom,#050707 0%,#050707 38%,#5d201d 60%,#ac3029 80%,#ac3029 100%)}
+.cover-backdrop:before{content:'';position:absolute;inset:-20%;background:radial-gradient(ellipse 12% 44% at 57% 74%,#da4639 0%,#a12b23 38%,transparent 70%),radial-gradient(ellipse 13% 35% at 28% 82%,#bc382b 0%,transparent 75%),radial-gradient(ellipse 25% 27% at 86% 86%,#c83930 0%,transparent 75%);filter:blur(24px);animation:coverFlame 6s ease-in-out infinite alternate;will-change:transform,opacity}
+.cover-backdrop:after{content:'';position:absolute;inset:20% -25% -25%;background:radial-gradient(ellipse at 55% 88%,#ed423955,transparent 65%);filter:blur(30px);animation:coverLight 4.5s ease-in-out infinite alternate}
+@keyframes coverFlame{0%{transform:translate(-3%,2%) scale(1.03);opacity:.72}50%{transform:translate(3%,-4%) scale(1.12,1.08);opacity:1}100%{transform:translate(-1%,-2%) scale(1.08,1.13);opacity:.83}}
+@keyframes coverLight{from{transform:translate(-5%,3%) scale(.95);opacity:.4}to{transform:translate(5%,-5%) scale(1.12);opacity:.8}}
+.cover-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}.cover-filters{position:absolute;width:0;height:0;pointer-events:none}
+body.cover-active .hamburger,body.cover-active #panel{visibility:hidden;pointer-events:none}
+body.cover-active,html:has(body.cover-active){background:#ac3029}
+.cover-page[data-cover="instructions"] .cover-frame:after{content:'';position:absolute;left:34%;top:89.25%;width:32%;height:1px;background:#fff;opacity:0;pointer-events:none}
+.cover-page[data-cover="instructions"].is-current .cover-frame:after{animation:lineAppear .8s ease 4.05s both}
+@keyframes lineAppear{from{opacity:0}to{opacity:.3}}
+@media(prefers-reduced-motion:reduce){.cover-backdrop:before,.cover-backdrop:after{animation:none}.cover-page.is-current .cover-fragment{animation-duration:.2s}.cover-page,#covers{transition-duration:.2s}}

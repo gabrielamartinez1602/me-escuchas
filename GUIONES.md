@@ -348,11 +348,11 @@ Madres buscadoras caminaron con fotografías de sus familiares. Piden recursos p
 
 Archivo: `assets/noticias/noticia-043.mp3`
 
-## 44. Dos de octubre
+## 44. 02 de octubre
 
 Manifestaciones y exigencia de justicia · Voz: Alonso
 
-Una marcha por el dos de octubre recorrió las calles entre consignas de memoria y justicia. Las personas participantes exigen que la violencia de Estado no se olvide ni se repita.
+Una marcha por el 02 de octubre recorrió las calles entre consignas de memoria y justicia. Las personas participantes exigen que la violencia de Estado no se olvide ni se repita.
 
 Archivo: `assets/noticias/noticia-044.mp3`
 
@@ -568,7 +568,7 @@ Archivo: `assets/noticias/noticia-070.mp3`
 
 Alertas y personas ausentes · Voz: Paloma
 
-En esta recreación de una Alerta Ámber se busca a una niña de ocho años, vista por última vez cerca de un parque en la colonia Los Sauces. Su familia pide una búsqueda inmediata y acompañamiento.
+Alerta Ámber: se busca a una niña de ocho años, vista por última vez cerca de un parque en la colonia Los Sauces. Su familia pide una búsqueda inmediata y acompañamiento.
 
 Archivo: `assets/noticias/noticia-071.mp3`
 

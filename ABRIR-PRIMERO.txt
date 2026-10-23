@@ -1,0 +1,9 @@
+¿ME ESCUCHAS? — ENTREGA FINAL
+
+Abre me escuchas.code-workspace con Visual Studio Code.
+Para ver la experiencia: Terminal → Ejecutar tarea → Ver experiencia en local.
+Luego abre http://127.0.0.1:8000.
+También puedes usar Live Server desde index.html.
+
+Consulta README.md para instrucciones y la estructura del proyecto.
+Todos los recursos y los 98 audios están incluidos.

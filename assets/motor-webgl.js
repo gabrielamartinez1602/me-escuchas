@@ -1,0 +1,62 @@
+/* Renderizado con profundidad real. Los vértices del escenario son inmutables. */
+(function(){
+ 'use strict';
+ function triangulate(points){
+  if(points.length===3)return [[0,1,2]];
+  const normal=[0,0,0];for(let i=0;i<points.length;i++){const a=points[i],b=points[(i+1)%points.length];normal[0]+=(a[1]-b[1])*(a[2]+b[2]);normal[1]+=(a[2]-b[2])*(a[0]+b[0]);normal[2]+=(a[0]-b[0])*(a[1]+b[1]);}
+  const axis=normal.map(Math.abs).indexOf(Math.max(...normal.map(Math.abs))),p=points.map(v=>v.filter((_,i)=>i!==axis));
+  const cross=(a,b,c)=>(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
+  const area=p.reduce((sum,a,i)=>{const b=p[(i+1)%p.length];return sum+a[0]*b[1]-b[0]*a[1]},0);if(Math.abs(area)<1e-9)return [];
+  const sign=Math.sign(area),ids=p.map((_,i)=>i),out=[];let attempts=0;
+  while(ids.length>3){let found=false;
+   for(let k=0;k<ids.length;k++){const a=ids[(k+ids.length-1)%ids.length],b=ids[k],c=ids[(k+1)%ids.length];if(sign*cross(p[a],p[b],p[c])<=1e-10)continue;
+    if(ids.some(j=>j!==a&&j!==b&&j!==c&&sign*cross(p[a],p[b],p[j])>=-1e-9&&sign*cross(p[b],p[c],p[j])>=-1e-9&&sign*cross(p[c],p[a],p[j])>=-1e-9))continue;
+    out.push([a,b,c]);ids.splice(k,1);found=true;break;
+   }
+   if(!found){const k=ids.findIndex((b,i)=>Math.abs(cross(p[ids[(i+ids.length-1)%ids.length]],p[b],p[ids[(i+1)%ids.length]]))<1e-8);if(k>=0)ids.splice(k,1);else throw Error('Contorno no simple en el escenario');}
+   if(++attempts>points.length*2)throw Error('Triangulación incompleta');
+  }if(ids.length===3)out.push(ids.slice());return out;
+ }
+ function color(hex){return [1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255)}
+ class EnojoRenderer{
+  constructor(canvas){this.canvas=canvas;this.gl=canvas.getContext('webgl',{alpha:false,antialias:true,depth:true,powerPreference:'high-performance'})||canvas.getContext('experimental-webgl');if(!this.gl)throw Error('WebGL no está disponible');const gl=this.gl;
+   const shader=(kind,source)=>{const s=gl.createShader(kind);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s};
+   const program=(vs,fs)=>{const p=gl.createProgram();gl.attachShader(p,shader(gl.VERTEX_SHADER,vs));gl.attachShader(p,shader(gl.FRAGMENT_SHADER,fs));gl.linkProgram(p);if(!gl.getProgramParameter(p,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(p));return p};
+   this.world=program(`attribute vec3 position;attribute vec3 color;attribute vec3 normal;attribute float emission;uniform vec3 camera;uniform vec4 rotation;uniform vec4 lens;uniform float roll;varying vec3 tint;varying vec3 worldPosition;varying vec3 worldNormal;varying float emissive;varying float depth;
+    void main(){vec3 p=position-camera;float x=p.x*rotation.x+p.z*rotation.y;float z=p.x*rotation.y-p.z*rotation.x;float y=p.y*rotation.z-z*rotation.w;z=p.y*rotation.w+z*rotation.z;float xx=x*cos(roll)+y*sin(roll);float yy=-x*sin(roll)+y*cos(roll);gl_Position=vec4(xx*lens.x,yy*lens.y+.02*z,lens.z*z+lens.w,z);tint=color;depth=z;worldPosition=position;worldNormal=normal;emissive=emission;}`,`precision highp float;
+    varying vec3 tint;varying vec3 worldPosition;varying vec3 worldNormal;varying float emissive;varying float depth;uniform float voidAmount;uniform float sceneAmbient;uniform vec3 camera;
+    uniform vec4 lightPosition[8];uniform vec4 lightDirection[8];uniform vec4 lightCone[8];uniform vec4 poleBase[8];uniform vec3 poleTop[8];
+    float poleShadow(vec3 origin,vec3 target,vec3 base,vec3 top,float radius){vec3 u=target-origin,v=top-base,w=origin-base;float a=dot(u,u),b=dot(u,v),c=dot(v,v),d=dot(u,w),e=dot(v,w),den=max(a*c-b*b,.0001);float t=clamp((a*e-b*d)/den,0.,1.);float s=clamp((b*t-d)/max(a,.0001),0.,1.);float dist=length(w+s*u-t*v);return (1.-smoothstep(radius*.8,radius*1.7,dist))*step(.04,s)*step(s,.985)*step(t,.98);}
+    void main(){vec3 n=normalize(worldNormal),lit=tint*(sceneAmbient+.025*abs(n.y));
+     if(emissive<.5){for(int i=0;i<8;i++){if(lightDirection[i].w>0.){vec3 delta=lightPosition[i].xyz-worldPosition;float squared=dot(delta,delta);if(squared<lightPosition[i].w*lightPosition[i].w){float distance=sqrt(squared);vec3 L=delta/max(distance,.001);float cone=smoothstep(lightCone[i].x,lightCone[i].y,dot(-L,lightDirection[i].xyz));if(cone>.001){float falloff=pow(max(0.,1.-distance/lightPosition[i].w),2.);float shadow=poleShadow(lightPosition[i].xyz,worldPosition,poleBase[i].xyz,poleTop[i],poleBase[i].w);float power=cone*falloff*abs(dot(n,L))*lightDirection[i].w*(1.-.88*shadow);lit+=vec3(1.,.095,.17)*power*(.34+.34*tint);float wet=pow(max(0.,dot(reflect(-L,n),normalize(camera-worldPosition))),24.)*power*.18*abs(n.y);lit+=vec3(1.,.2,.25)*wet;}}}}}
+
+     if(emissive>.5){float activation=0.;for(int i=0;i<8;i++){if(length(worldPosition-lightPosition[i].xyz)<.9)activation=max(activation,lightCone[i].z);}lit=mix(vec3(0.),vec3(1.,.025,.07),activation);}lit*=1.-voidAmount;float fog=smoothstep(52.,175.,depth);gl_FragColor=vec4(mix(lit,mix(vec3(.018,.018,.025),vec3(0.),voidAmount),fog),1.);
+    }`);
+   this.skyProgram=program(`attribute vec2 position;varying vec2 uv;void main(){uv=position;gl_Position=vec4(position,0.,1.);}`,`precision highp float;varying vec2 uv;uniform sampler2D sky;uniform vec4 view;uniform float voidAmount;uniform float sceneDim;void main(){vec3 ray=normalize(vec3(uv.x/view.x,uv.y/view.y,1.));float y=ray.y*cos(view.w)+ray.z*sin(view.w);float z=ray.z*cos(view.w)-ray.y*sin(view.w);float az=atan(ray.x,z)+view.z;vec2 tex=vec2(fract(az/6.2831853+.5),clamp(.46-asin(clamp(y,-1.,1.))/3.14159265,0.,1.));gl_FragColor=vec4(texture2D(sky,tex).rgb*(1.-voidAmount)*sceneDim,1.);}`);
+   this.coneProgram=program(`attribute vec3 position;attribute float opacity;uniform vec3 camera;uniform vec4 rotation;uniform vec4 lens;uniform float roll;varying float alpha;varying float depth;void main(){vec3 p=position-camera;float x=p.x*rotation.x+p.z*rotation.y,z=p.x*rotation.y-p.z*rotation.x;float y=p.y*rotation.z-z*rotation.w;z=p.y*rotation.w+z*rotation.z;float xx=x*cos(roll)+y*sin(roll),yy=-x*sin(roll)+y*cos(roll);gl_Position=vec4(xx*lens.x,yy*lens.y+.02*z,lens.z*z+lens.w,z);alpha=opacity;depth=z;}`,`precision highp float;varying float alpha;varying float depth;void main(){gl_FragColor=vec4(1.,.015,.055,alpha*(1.-smoothstep(35.,65.,depth)));}`);
+   this.coneBuffer=gl.createBuffer();this.proximity=new window.EnojoLight.Proximity();
+   this.quad=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,this.quad);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
+   this.buffer=gl.createBuffer();this.texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,this.texture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([11,11,16,255]));for(const axis of [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T])gl.texParameteri(gl.TEXTURE_2D,axis,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);this.count=0;
+  }
+  upload(faces){const data=[];for(const face of faces){const rgb=color(face.color);for(const tri of triangulate(face.points)){const [a,b,c]=tri.map(i=>face.points[i]),u=b.map((x,i)=>x-a[i]),v=c.map((x,i)=>x-a[i]);const n=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]],len=Math.hypot(...n)||1;for(const i of tri)data.push(...face.points[i],...rgb,...n.map(x=>x/len),face.emissive||0)}}const gl=this.gl;this.count=data.length/10;gl.bindBuffer(gl.ARRAY_BUFFER,this.buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(data),gl.STATIC_DRAW);this.triangles=this.count/3;}
+  setLights(lights){this.lights=lights}
+  uploadLights(cam){const gl=this.gl,positions=new Float32Array(32),directions=new Float32Array(32),cones=new Float32Array(32),bases=new Float32Array(32),tops=new Float32Array(24);this.activeLights=this.proximity.update(this.lights||[],cam,cam.delta||0);
+   this.activeLights.forEach((s,i)=>{const l=s.light;positions.set([...l.position,s.range],i*4);directions.set([...l.direction,l.intensity*s.amount*(1+.8*(s.flash||0))],i*4);cones.set([s.outerCos,s.innerCos,s.amount,s.radius],i*4);bases.set([...l.poleBase,.08],i*4);tops.set(l.poleTop,i*3)});
+   gl.uniform4fv(gl.getUniformLocation(this.world,'lightPosition[0]'),positions);gl.uniform4fv(gl.getUniformLocation(this.world,'lightDirection[0]'),directions);gl.uniform4fv(gl.getUniformLocation(this.world,'lightCone[0]'),cones);gl.uniform4fv(gl.getUniformLocation(this.world,'poleBase[0]'),bases);gl.uniform3fv(gl.getUniformLocation(this.world,'poleTop[0]'),tops);
+  }
+  drawCones(cam,sx,sy){
+   const data=[];for(const state of this.activeLights||[]){const amount=.6*state.amount*(1-(cam.voidAmount||0));if(amount<.01)continue;const source=state.light.position,center=state.center;
+    for(const [scale,opacity] of [[1,.012],[.75,.015],[.45,.020]])for(let i=0;i<12;i++){const a=i/12*Math.PI*2,b=(i+1)/12*Math.PI*2,r=state.radius*scale;data.push(...source,opacity*amount*1.4,center[0]+Math.cos(a)*r,center[1],center[2]+Math.sin(a)*r,opacity*amount*.28,center[0]+Math.cos(b)*r,center[1],center[2]+Math.sin(b)*r,opacity*amount*.28)}
+   }if(!data.length)return;const gl=this.gl,p=this.coneProgram;gl.useProgram(p);gl.bindBuffer(gl.ARRAY_BUFFER,this.coneBuffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(data),gl.DYNAMIC_DRAW);
+   for(const [name,size,offset] of [['position',3,0],['opacity',1,12]]){const location=gl.getAttribLocation(p,name);gl.enableVertexAttribArray(location);gl.vertexAttribPointer(location,size,gl.FLOAT,false,16,offset)}
+   gl.uniform3f(gl.getUniformLocation(p,'camera'),cam.x,cam.eye,cam.z);gl.uniform4f(gl.getUniformLocation(p,'rotation'),cam.cos,cam.sin,cam.cp,cam.sp);const near=.15,far=220;gl.uniform4f(gl.getUniformLocation(p,'lens'),sx,sy,(far+near)/(far-near),-2*far*near/(far-near));gl.uniform1f(gl.getUniformLocation(p,'roll'),cam.roll||0);
+   gl.depthMask(false);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE);gl.drawArrays(gl.TRIANGLES,0,data.length/4);gl.disable(gl.BLEND);gl.depthMask(true);
+  }
+  setSky(image){const gl=this.gl;gl.bindTexture(gl.TEXTURE_2D,this.texture);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image)}
+  resize(w,h,dpr){this.width=w;this.height=h;this.canvas.width=Math.round(w*dpr);this.canvas.height=Math.round(h*dpr);this.gl.viewport(0,0,this.canvas.width,this.canvas.height)}
+  draw(cam){const gl=this.gl,f=Math.max(Math.min(this.width,this.height)*1.03,this.height*.74),sx=2*f/this.width,sy=2*f/this.height;gl.clearColor(.043,.043,.063,1);gl.clearDepth(1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.disable(gl.DEPTH_TEST);gl.useProgram(this.skyProgram);gl.uniform1f(gl.getUniformLocation(this.skyProgram,'sceneDim'),.38);gl.uniform1f(gl.getUniformLocation(this.skyProgram,'voidAmount'),cam.voidAmount||0);gl.bindBuffer(gl.ARRAY_BUFFER,this.quad);const skyPos=gl.getAttribLocation(this.skyProgram,'position');gl.enableVertexAttribArray(skyPos);gl.vertexAttribPointer(skyPos,2,gl.FLOAT,false,0,0);gl.uniform4f(gl.getUniformLocation(this.skyProgram,'view'),sx,sy,Math.atan2(cam.sin,cam.cos),Math.atan2(cam.sp,cam.cp));gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,this.texture);gl.uniform1i(gl.getUniformLocation(this.skyProgram,'sky'),0);gl.drawArrays(gl.TRIANGLES,0,6);gl.disableVertexAttribArray(skyPos);
+   gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LESS);gl.depthMask(true);gl.disable(gl.BLEND);gl.useProgram(this.world);gl.uniform1f(gl.getUniformLocation(this.world,'sceneAmbient'),.30);gl.uniform1f(gl.getUniformLocation(this.world,'voidAmount'),cam.voidAmount||0);gl.bindBuffer(gl.ARRAY_BUFFER,this.buffer);for(const [name,offset,size] of [['position',0,3],['color',12,3],['normal',24,3],['emission',36,1]]){const loc=gl.getAttribLocation(this.world,name);gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,size,gl.FLOAT,false,40,offset)}this.uploadLights(cam);gl.uniform3f(gl.getUniformLocation(this.world,'camera'),cam.x,cam.eye,cam.z);gl.uniform4f(gl.getUniformLocation(this.world,'rotation'),cam.cos,cam.sin,cam.cp,cam.sp);const near=.15,far=220;gl.uniform4f(gl.getUniformLocation(this.world,'lens'),sx,sy,(far+near)/(far-near),-2*far*near/(far-near));gl.uniform1f(gl.getUniformLocation(this.world,'roll'),cam.roll||0);gl.drawArrays(gl.TRIANGLES,0,this.count);this.drawCones(cam,sx,sy);
+  }
+ }
+ window.EnojoRenderer=EnojoRenderer;window.EnojoTriangulate=triangulate;
+})();

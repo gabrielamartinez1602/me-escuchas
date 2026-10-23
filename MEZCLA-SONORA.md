@@ -4,7 +4,7 @@ El fondo es una síntesis original de osciladores disonantes, ruido filtrado y p
 
 - Inicio: fondo tenue y corazón lento; las noticias se activan al tocar las manchas.
 - Desarrollo: suben altura tonal, volumen, ritmo del corazón y velocidad de las voces. Se añaden capas de fondo.
-- Desde el 35 % se añaden noticias cerca de los faroles encendidos. El intervalo baja de 11 a 3 segundos y aumenta la cantidad de voces superpuestas. Las noticias previas siguen hasta terminar.
+- Las noticias solo se reproducen al tocar una esfera roja o pulsar Repetir. Pueden superponerse si se activan varias; cada una continúa hasta terminar.
 - Apertura de la reja: a los 2,1 segundos de la secuencia final, el mismo momento en que comienza su apertura visual, se detienen voces, corazón y fondo. Solo permanece un tono sinusoidal sostenido de 1250 Hz.
 - Silenciar afecta toda la mezcla. Reiniciar corta el tono y restablece la progresión.
 
