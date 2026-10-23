@@ -1,0 +1,884 @@
+[
+  {
+    "id": "noticia-001",
+    "title": "Inundación en Las Jacarandas",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Inundación en la colonia Las Jacarandas. El agua ingresó a viviendas y comercios después de una hora de lluvia. Vecinos solicitan bombas y apoyo para rescatar sus pertenencias.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-001.mp3"
+  },
+  {
+    "id": "noticia-002",
+    "title": "Drenaje sin mantenimiento",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Habitantes de la colonia El Olivo denuncian alcantarillas tapadas desde hace meses. Aseguran que presentaron reportes, pero el mantenimiento no llegó antes de las lluvias.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-002.mp3"
+  },
+  {
+    "id": "noticia-003",
+    "title": "Calles sin alumbrado",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Tres calles de la colonia San Miguel permanecen sin alumbrado público. Las familias regresan a casa con la luz de sus teléfonos y piden una fecha para la reparación.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-003.mp3"
+  },
+  {
+    "id": "noticia-004",
+    "title": "Bache sin señalización",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Un bache profundo ocupa un carril en la avenida Del Canal. Automovilistas colocaron ramas para advertir del riesgo, después de varios reportes sin respuesta.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-004.mp3"
+  },
+  {
+    "id": "noticia-005",
+    "title": "Fuga de agua",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Una fuga lleva cinco días sobre la calle Fresno. Mientras el agua corre por la banqueta, habitantes de las calles cercanas reportan falta de suministro en sus casas.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-005.mp3"
+  },
+  {
+    "id": "noticia-006",
+    "title": "Viviendas anegadas",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "En la colonia Los Pinos, el nivel del agua alcanzó muebles y colchones. Personas mayores esperan ayuda para salir de sus viviendas. Los vecinos organizaron el primer rescate.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-006.mp3"
+  },
+  {
+    "id": "noticia-007",
+    "title": "Paso peatonal obstruido",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Una obra mantiene bloqueado el paso peatonal junto a una escuela. Niñas y niños deben bajar al arroyo vehicular para continuar. Las familias exigen una ruta segura.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-007.mp3"
+  },
+  {
+    "id": "noticia-008",
+    "title": "Parada bajo la lluvia",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Usuarios esperan transporte bajo la lluvia, en una parada sin techo ni iluminación. Las unidades pasan llenas y los tiempos de espera superan los cuarenta minutos.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-008.mp3"
+  },
+  {
+    "id": "noticia-009",
+    "title": "Desalojo tras las lluvias",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Familias fueron evacuadas de un edificio con filtraciones. No tienen un lugar donde pasar la noche y esperan una valoración de la estructura para recuperar sus documentos.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-009.mp3"
+  },
+  {
+    "id": "noticia-010",
+    "title": "Desigualdad en el acceso al agua",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Dos colonias vecinas viven realidades distintas. En una hay agua todos los días; en la otra, las familias deben comprarla y cargar cubetas hasta sus viviendas.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-010.mp3"
+  },
+  {
+    "id": "noticia-011",
+    "title": "Escuela sin condiciones",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Madres y padres denuncian aulas con goteras y baños fuera de servicio. La comunidad escolar pide reparaciones antes de que otro temporal obligue a suspender las clases.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-011.mp3"
+  },
+  {
+    "id": "noticia-012",
+    "title": "Barrio sin atención médica",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Habitantes de la colonia La Esperanza reportan que el centro de salud volvió a cerrar por falta de personal. Varias personas regresaron a casa sin recibir atención.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-012.mp3"
+  },
+  {
+    "id": "noticia-013",
+    "title": "Cruce sin accesibilidad",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Una persona usuaria de silla de ruedas tuvo que circular entre vehículos porque la rampa estaba bloqueada. Vecinos piden retirar los obstáculos y reparar la banqueta.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-013.mp3"
+  },
+  {
+    "id": "noticia-014",
+    "title": "Viviendas junto al cauce",
+    "category": "Inundaciones y servicios urbanos",
+    "text": "Familias que viven junto al cauce pasaron la noche vigilando el nivel del agua. Dicen que las alertas llegaron tarde y que no conocen un punto de refugio cercano.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-014.mp3"
+  },
+  {
+    "id": "noticia-015",
+    "title": "Choque rumbo a Querétaro",
+    "category": "Riesgos viales",
+    "text": "Choque en la carretera México Querétaro, a la altura del kilómetro cuarenta y dos. Dos vehículos quedaron atravesados. Los equipos de emergencia atienden a las personas lesionadas y solicitan reducir la velocidad.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-015.mp3"
+  },
+  {
+    "id": "noticia-016",
+    "title": "Automóvil atrapado en un bache",
+    "category": "Riesgos viales",
+    "text": "Un automóvil quedó atrapado en un bache cubierto por el agua, en la colonia El Encino. El conductor no pudo ver la profundidad. Vecinos ayudaron a sacar a sus acompañantes.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-016.mp3"
+  },
+  {
+    "id": "noticia-017",
+    "title": "Motociclista lesionado",
+    "category": "Riesgos viales",
+    "text": "Un motociclista resultó lesionado después de caer en una zona sin señalización. Testigos señalan que había grava suelta desde el día anterior. La circulación continúa parcialmente cerrada.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-017.mp3"
+  },
+  {
+    "id": "noticia-018",
+    "title": "Camión sin frenos",
+    "category": "Riesgos viales",
+    "text": "Un camión de carga perdió el control en una pendiente. Los servicios de emergencia revisan a varias personas. Las autoridades piden evitar el cruce y permitir el paso de ambulancias.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-018.mp3"
+  },
+  {
+    "id": "noticia-019",
+    "title": "Atropellamiento en un cruce",
+    "category": "Riesgos viales",
+    "text": "Una persona fue atropellada al intentar cruzar una avenida sin semáforo peatonal. Habitantes del barrio dicen que llevan meses solicitando medidas para reducir la velocidad.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-019.mp3"
+  },
+  {
+    "id": "noticia-020",
+    "title": "Ambulancia detenida",
+    "category": "Riesgos viales",
+    "text": "Una ambulancia quedó detenida entre vehículos que no le cedieron el paso. En el lugar se escucharon llamados para abrir un corredor. La atención de una persona dependía de llegar a tiempo.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-020.mp3"
+  },
+  {
+    "id": "noticia-021",
+    "title": "Transporte en malas condiciones",
+    "category": "Riesgos viales",
+    "text": "Pasajeros tuvieron que abandonar una unidad que presentó una falla mecánica. Denuncian que el vehículo ya mostraba daños y que no había una alternativa segura para continuar.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-021.mp3"
+  },
+  {
+    "id": "noticia-022",
+    "title": "Ciclista sin protección",
+    "category": "Riesgos viales",
+    "text": "Un ciclista fue golpeado por un vehículo junto a una ciclovía bloqueada. Testigos solicitaron ayuda. Colectivos piden que la infraestructura no termine donde empieza el mayor riesgo.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-022.mp3"
+  },
+  {
+    "id": "noticia-023",
+    "title": "Choque cerca de una escuela",
+    "category": "Riesgos viales",
+    "text": "Dos vehículos chocaron frente a una escuela durante la hora de salida. Las familias resguardaron a los estudiantes y solicitan vigilancia para ordenar el tránsito.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-023.mp3"
+  },
+  {
+    "id": "noticia-024",
+    "title": "Caída en una coladera abierta",
+    "category": "Riesgos viales",
+    "text": "Una persona cayó en una coladera sin tapa durante la noche. Vecinos colocaron una barrera improvisada mientras esperaban a los servicios de emergencia.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-024.mp3"
+  },
+  {
+    "id": "noticia-025",
+    "title": "Volcadura en una curva",
+    "category": "Riesgos viales",
+    "text": "Se reporta una volcadura en una curva de la carretera local. Varias personas auxiliaron a los ocupantes. Conductores denuncian que las marcas del pavimento casi no se distinguen.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-025.mp3"
+  },
+  {
+    "id": "noticia-026",
+    "title": "Accidente bajo la lluvia",
+    "category": "Riesgos viales",
+    "text": "Un vehículo derrapó sobre una avenida inundada. La lluvia impidió a otros conductores ver el accidente. Personal de emergencia solicita no acercarse y mantener libre el carril de auxilio.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-026.mp3"
+  },
+  {
+    "id": "noticia-027",
+    "title": "Persona mayor lesionada",
+    "category": "Riesgos viales",
+    "text": "Una persona mayor resultó lesionada al cruzar una calle sin tiempo suficiente en el semáforo. Habitantes piden que los cruces contemplen a quienes caminan más despacio.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-027.mp3"
+  },
+  {
+    "id": "noticia-028",
+    "title": "Familia en espera de ayuda",
+    "category": "Riesgos viales",
+    "text": "Una familia permanece junto a su vehículo después de un choque en carretera. Dicen que solicitaron asistencia y que la espera se prolonga mientras cae la noche.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-028.mp3"
+  },
+  {
+    "id": "noticia-029",
+    "title": "Asalto en la colonia El Mirador",
+    "category": "Inseguridad y abuso",
+    "text": "Asalto en la colonia El Mirador. Dos personas interceptaron a pasajeros que regresaban del trabajo. Las víctimas reportan el robo de sus pertenencias y esperan poder presentar la denuncia.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-029.mp3"
+  },
+  {
+    "id": "noticia-030",
+    "title": "Robo en transporte público",
+    "category": "Inseguridad y abuso",
+    "text": "Pasajeros de una unidad de transporte público denunciaron un robo durante el trayecto. Varias personas bajaron antes de su destino y buscaron ayuda en comercios cercanos.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-030.mp3"
+  },
+  {
+    "id": "noticia-031",
+    "title": "Comerciante amenazado",
+    "category": "Inseguridad y abuso",
+    "text": "Un comerciante de la colonia La Palma denunció llamadas de amenaza para exigirle dinero. Cerró su negocio antes de tiempo y solicita protección para su familia y sus trabajadores.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-031.mp3"
+  },
+  {
+    "id": "noticia-032",
+    "title": "Cobro irregular en un retén",
+    "category": "Inseguridad y abuso",
+    "text": "Un conductor denunció que le exigieron dinero para permitirle continuar en un retén. Pide que se revisen los hechos y que su denuncia no termine archivada.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-032.mp3"
+  },
+  {
+    "id": "noticia-033",
+    "title": "Vecinos sin respuesta",
+    "category": "Inseguridad y abuso",
+    "text": "Habitantes reportaron gritos y una agresión en la calle. Aseguran que hicieron varias llamadas de auxilio antes de recibir respuesta. La comunidad pide una revisión de la atención a emergencias.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-033.mp3"
+  },
+  {
+    "id": "noticia-034",
+    "title": "Trabajadora sin salario",
+    "category": "Inseguridad y abuso",
+    "text": "Trabajadoras de un taller denuncian semanas sin pago y amenazas de despido si reclaman. Varias son el único sustento de sus hogares y piden una solución sin represalias.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-034.mp3"
+  },
+  {
+    "id": "noticia-035",
+    "title": "Desalojo de un comercio",
+    "category": "Inseguridad y abuso",
+    "text": "Personal retiró un puesto de venta mientras su propietaria pedía conservar sus herramientas. La mujer denuncia que no recibió información suficiente para defender su fuente de trabajo.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-035.mp3"
+  },
+  {
+    "id": "noticia-036",
+    "title": "Agresión en la vía pública",
+    "category": "Inseguridad y abuso",
+    "text": "Una persona fue agredida al salir de una tienda. Quienes presenciaron los hechos pidieron ayuda y acompañaron a la víctima hasta la llegada de los servicios de emergencia.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-036.mp3"
+  },
+  {
+    "id": "noticia-037",
+    "title": "Denuncia de violencia en casa",
+    "category": "Inseguridad y abuso",
+    "text": "Una vecina solicitó protección después de denunciar violencia en su vivienda. Personas cercanas señalan que había pedido ayuda antes. Exigen una respuesta que garantice su seguridad.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-037.mp3"
+  },
+  {
+    "id": "noticia-038",
+    "title": "Robo de medicamentos",
+    "category": "Inseguridad y abuso",
+    "text": "Una familia denunció el robo de una bolsa con medicamentos durante un asalto. Además de las pérdidas materiales, enfrenta la interrupción de un tratamiento que no puede costear de nuevo.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-038.mp3"
+  },
+  {
+    "id": "noticia-039",
+    "title": "Disparos durante la noche",
+    "category": "Inseguridad y abuso",
+    "text": "Vecinos de la colonia El Roble reportaron disparos durante la noche. Familias se alejaron de las ventanas y buscaron refugio. Piden información clara sobre lo ocurrido.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-039.mp3"
+  },
+  {
+    "id": "noticia-040",
+    "title": "Agresión a una persona sin hogar",
+    "category": "Inseguridad y abuso",
+    "text": "Una persona que dormía en la calle fue agredida. Comerciantes solicitaron una ambulancia. Organizaciones recuerdan que vivir sin una vivienda no elimina el derecho a recibir protección.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-040.mp3"
+  },
+  {
+    "id": "noticia-041",
+    "title": "Denuncia contra personal militar",
+    "category": "Inseguridad y abuso",
+    "text": "Una familia denuncia una detención violenta durante un operativo militar. Solicita que una autoridad independiente investigue y que se informe el paradero de la persona detenida.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-041.mp3"
+  },
+  {
+    "id": "noticia-042",
+    "title": "Uso de la fuerza bajo investigación",
+    "category": "Inseguridad y abuso",
+    "text": "Se investiga una denuncia por uso excesivo de la fuerza durante un operativo. Testigos piden preservar las grabaciones y evitar que quienes declararon sufran amenazas.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-042.mp3"
+  },
+  {
+    "id": "noticia-043",
+    "title": "Madres buscadoras marchan",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Madres buscadoras caminaron con fotografías de sus familiares. Piden recursos para buscar, respuestas verificables y un trato digno. Su consigna se repite: no son expedientes, son personas.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-043.mp3"
+  },
+  {
+    "id": "noticia-044",
+    "title": "Dos de octubre",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Una marcha por el dos de octubre recorrió las calles entre consignas de memoria y justicia. Las personas participantes exigen que la violencia de Estado no se olvide ni se repita.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-044.mp3"
+  },
+  {
+    "id": "noticia-045",
+    "title": "Ayotzinapa",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Familiares y estudiantes marcharon para exigir verdad y justicia por Ayotzinapa. Llevaron retratos y mantas. Piden esclarecer lo ocurrido y conocer el destino de los cuarenta y tres estudiantes.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-045.mp3"
+  },
+  {
+    "id": "noticia-046",
+    "title": "Protesta por falta de agua",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Habitantes de varias colonias se manifestaron por la falta de agua. Dicen que han gastado parte de sus ingresos en abastecerse mientras sus solicitudes siguen sin una respuesta concreta.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-046.mp3"
+  },
+  {
+    "id": "noticia-047",
+    "title": "Marcha contra la violencia de género",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Mujeres marcharon para exigir seguridad y justicia. Algunas llevaron los nombres de víctimas y de personas desaparecidas. Piden que las denuncias se atiendan antes de otra agresión.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-047.mp3"
+  },
+  {
+    "id": "noticia-048",
+    "title": "Trabajadores reclaman atención",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Trabajadores protestaron por salarios pendientes y jornadas excesivas. Señalan que el cansancio y la incertidumbre también afectan a sus familias. Solicitan diálogo y compromisos que se cumplan.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-048.mp3"
+  },
+  {
+    "id": "noticia-049",
+    "title": "Colectivos denuncian discriminación",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Colectivos se reunieron para denunciar actos de discriminación en servicios y espacios públicos. Exigen que acceder a un derecho no dependa del origen, la apariencia o los ingresos.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-049.mp3"
+  },
+  {
+    "id": "noticia-050",
+    "title": "Estudiantes piden seguridad",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Estudiantes se manifestaron después de varias agresiones en el trayecto a clases. Reclaman iluminación, transporte seguro y atención a las denuncias. Dicen que estudiar no debería implicar miedo.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-050.mp3"
+  },
+  {
+    "id": "noticia-051",
+    "title": "Protesta frente a oficinas públicas",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Familias esperaron durante horas frente a oficinas públicas para pedir una audiencia. Llevaban carpetas y fotografías. Denuncian que cada trámite les obliga a volver a contar el mismo dolor.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-051.mp3"
+  },
+  {
+    "id": "noticia-052",
+    "title": "Tensión en una manifestación",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Se reportan empujones durante una manifestación. Algunas personas intentan salir de la zona y otras piden calma. Observadores solicitan proteger a quienes marchan y permitir el trabajo de la prensa.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-052.mp3"
+  },
+  {
+    "id": "noticia-053",
+    "title": "Periodistas solicitan protección",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Periodistas denunciaron amenazas después de documentar un operativo. Piden garantías para informar y conservar sus materiales. Organizaciones exigen que ninguna agresión quede sin investigar.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-053.mp3"
+  },
+  {
+    "id": "noticia-054",
+    "title": "Mantas retiradas de una plaza",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Familias denuncian que retiraron de una plaza las mantas con los rostros de sus seres queridos. Preguntan por qué desaparecen sus fotografías mientras las respuestas siguen sin llegar.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-054.mp3"
+  },
+  {
+    "id": "noticia-055",
+    "title": "Gas durante una protesta",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Manifestantes reportan irritación y dificultad para respirar durante una confrontación. Brigadistas atienden a varias personas. Se solicita una investigación sobre el uso de la fuerza.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-055.mp3"
+  },
+  {
+    "id": "noticia-056",
+    "title": "Reclamo de verdad",
+    "category": "Manifestaciones y exigencia de justicia",
+    "text": "Al terminar la marcha, las familias permanecieron con las fotografías en alto. Exigen una investigación independiente. Dicen que el cansancio no es una respuesta y que el silencio no es justicia.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-056.mp3"
+  },
+  {
+    "id": "noticia-057",
+    "title": "Perro abandonado en azotea",
+    "category": "Maltrato y abandono animal",
+    "text": "Vecinos reportan un perro que permanece en una azotea sin sombra ni agua visible. Solicitan una revisión de bienestar animal antes de que las altas temperaturas pongan en riesgo su vida.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-057.mp3"
+  },
+  {
+    "id": "noticia-058",
+    "title": "Animales sin atención",
+    "category": "Maltrato y abandono animal",
+    "text": "Una rescatista denunció animales con heridas sin atención veterinaria. Pide que las autoridades revisen el lugar y que se garantice agua, alimento y un espacio seguro.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-058.mp3"
+  },
+  {
+    "id": "noticia-059",
+    "title": "Abandono junto a una avenida",
+    "category": "Maltrato y abandono animal",
+    "text": "Un perro fue abandonado junto a una avenida. Comerciantes intentan mantenerlo lejos de los vehículos mientras buscan una asociación que pueda ayudar a resguardarlo.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-059.mp3"
+  },
+  {
+    "id": "noticia-060",
+    "title": "Cachorros en una caja",
+    "category": "Maltrato y abandono animal",
+    "text": "Vecinos encontraron cachorros dentro de una caja junto a un terreno. Solicitaron apoyo veterinario y refugio temporal. Piden investigar quién los dejó sin protección.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-060.mp3"
+  },
+  {
+    "id": "noticia-061",
+    "title": "Animal transportado con riesgo",
+    "category": "Maltrato y abandono animal",
+    "text": "Un video muestra a un perro transportado sobre un vehículo bajo la lluvia. Personas que observaron el trayecto solicitaron ayuda por el riesgo de una caída.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-061.mp3"
+  },
+  {
+    "id": "noticia-062",
+    "title": "Refugio sin recursos",
+    "category": "Maltrato y abandono animal",
+    "text": "Un refugio reporta que no tiene alimento suficiente para los animales rescatados. Sus responsables piden apoyo y recuerdan que cada abandono deja una responsabilidad que alguien más debe asumir.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-062.mp3"
+  },
+  {
+    "id": "noticia-063",
+    "title": "Perro atado por horas",
+    "category": "Maltrato y abandono animal",
+    "text": "Habitantes denunciaron un perro que pasa horas atado en un patio reducido. Aseguran que ya habían reportado la situación. Solicitan una intervención antes de que su estado empeore.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-063.mp3"
+  },
+  {
+    "id": "noticia-064",
+    "title": "Caballo exhausto en la calle",
+    "category": "Maltrato y abandono animal",
+    "text": "Un caballo cayó después de arrastrar una carga. Vecinos pidieron detener el trabajo y solicitar atención veterinaria. Testigos denuncian que el animal ya mostraba señales de agotamiento.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-064.mp3"
+  },
+  {
+    "id": "noticia-065",
+    "title": "Denuncia de golpes a un perro",
+    "category": "Maltrato y abandono animal",
+    "text": "Se denuncian golpes contra un perro en un domicilio. La grabación fue entregada para solicitar una investigación. Rescatistas piden retirar al animal del riesgo y revisar su salud.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-065.mp3"
+  },
+  {
+    "id": "noticia-066",
+    "title": "Rescate después de una agresión",
+    "category": "Maltrato y abandono animal",
+    "text": "Un perro fue rescatado después de una agresión en la vía pública. Recibe atención veterinaria. Las personas que lo auxiliaron piden que el caso no se cierre sin investigar.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-066.mp3"
+  },
+  {
+    "id": "noticia-067",
+    "title": "Animal arrojado desde un vehículo",
+    "category": "Maltrato y abandono animal",
+    "text": "Testigos denunciaron que un animal fue arrojado desde un vehículo en movimiento. Vecinos solicitaron ayuda y entregaron la información que lograron registrar sobre lo ocurrido.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-067.mp3"
+  },
+  {
+    "id": "noticia-068",
+    "title": "Animales afectados por violencia",
+    "category": "Maltrato y abandono animal",
+    "text": "Habitantes reportan animales heridos después de un episodio de violencia en su comunidad. Solicitan atención y resguardo. Las familias también piden apoyo para recuperar un entorno seguro.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-068.mp3"
+  },
+  {
+    "id": "noticia-069",
+    "title": "Perro golpeado y arrojado a un pozo",
+    "category": "Maltrato y abandono animal",
+    "text": "Un perro fue golpeado y arrojado a un pozo en las afueras de una colonia. Rescatistas acudieron al lugar. La denuncia solicita investigar la agresión y atender al animal.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-069.mp3"
+  },
+  {
+    "id": "noticia-070",
+    "title": "Maltrato denunciado sin respuesta",
+    "category": "Maltrato y abandono animal",
+    "text": "Una asociación denuncia que varias alertas por maltrato animal no recibieron atención a tiempo. Exige revisar las omisiones. Los vecinos preguntan cuántas llamadas hacen falta para que alguien escuche.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-070.mp3"
+  },
+  {
+    "id": "noticia-071",
+    "title": "Alerta Ámber por niña de ocho años",
+    "category": "Alertas y personas ausentes",
+    "text": "En esta recreación de una Alerta Ámber se busca a una niña de ocho años, vista por última vez cerca de un parque en la colonia Los Sauces. Su familia pide una búsqueda inmediata y acompañamiento.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-071.mp3"
+  },
+  {
+    "id": "noticia-072",
+    "title": "Adolescente no regresó a casa",
+    "category": "Alertas y personas ausentes",
+    "text": "Una familia reporta que su hija adolescente no regresó a casa después de salir de clases. Solicita que se revisen las cámaras y se activen acciones de búsqueda sin demora.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-072.mp3"
+  },
+  {
+    "id": "noticia-073",
+    "title": "Persona mayor extraviada",
+    "category": "Alertas y personas ausentes",
+    "text": "Se busca a una persona mayor que salió de su vivienda y no ha regresado. Sus familiares recorren las calles con fotografías. Piden apoyo y una atención que contemple su vulnerabilidad.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-073.mp3"
+  },
+  {
+    "id": "noticia-074",
+    "title": "Trabajador desaparecido",
+    "category": "Alertas y personas ausentes",
+    "text": "Familiares buscan a un trabajador que no volvió después de su turno. Su teléfono dejó de responder durante el trayecto. Solicitan preservar registros y revisar las últimas rutas conocidas.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-074.mp3"
+  },
+  {
+    "id": "noticia-075",
+    "title": "Familia pega carteles",
+    "category": "Alertas y personas ausentes",
+    "text": "Una familia coloca carteles con la fotografía de su hijo. Cada hoja fue pagada con sus propios recursos. Dicen que seguirán buscando, aunque las respuestas no lleguen.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-075.mp3"
+  },
+  {
+    "id": "noticia-076",
+    "title": "Denuncia recibida con demora",
+    "category": "Alertas y personas ausentes",
+    "text": "Familiares denuncian que encontraron obstáculos para reportar una desaparición. Solicitan que se revise la atención y que ninguna familia pierda horas cruciales entre oficinas y requisitos.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-076.mp3"
+  },
+  {
+    "id": "noticia-077",
+    "title": "Búsqueda sin acompañamiento",
+    "category": "Alertas y personas ausentes",
+    "text": "Un grupo de familias salió a buscar sin acompañamiento suficiente. Lleva agua, palas y fotografías. Piden seguridad para realizar una tarea que nunca debió recaer únicamente en sus manos.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-077.mp3"
+  },
+  {
+    "id": "noticia-078",
+    "title": "Miedo a denunciar",
+    "category": "Alertas y personas ausentes",
+    "text": "Una familia afirma que recibió amenazas después de buscar información sobre un ser querido. Solicita protección y condiciones para continuar. Su exigencia es poder buscar sin convertirse en otra víctima.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-078.mp3"
+  },
+  {
+    "id": "noticia-079",
+    "title": "Contradicción en las cifras",
+    "category": "Alertas y personas ausentes",
+    "text": "Un anuncio oficial afirma que las cifras de desaparición bajaron, pero las familias siguen reportando ausencias. Colectivos piden explicar los registros y no confundir cambios administrativos con personas localizadas.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-079.mp3"
+  },
+  {
+    "id": "noticia-080",
+    "title": "Negación oficial de las desapariciones",
+    "category": "Alertas y personas ausentes",
+    "text": "En este escenario ficticio, el gobierno declara que ya no existen desapariciones. Frente al anuncio, familias muestran los retratos de quienes siguen ausentes y preguntan dónde están.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-080.mp3"
+  },
+  {
+    "id": "noticia-081",
+    "title": "Expedientes sin avances",
+    "category": "Alertas y personas ausentes",
+    "text": "Familias revisaron sus expedientes y denunciaron periodos sin avances. Piden conocer qué se investigó y qué sigue pendiente. Dicen que un número de carpeta no reemplaza una respuesta.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-081.mp3"
+  },
+  {
+    "id": "noticia-082",
+    "title": "Retratos bajo la lluvia",
+    "category": "Alertas y personas ausentes",
+    "text": "La lluvia empapó los carteles de búsqueda colocados en una pared. Personas del barrio ayudaron a reemplazarlos. Las familias piden que los nombres sigan visibles hasta encontrarles.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-082.mp3"
+  },
+  {
+    "id": "noticia-083",
+    "title": "Madres regresan a buscar",
+    "category": "Alertas y personas ausentes",
+    "text": "Madres buscadoras regresaron a un terreno señalado por una nueva pista. Solicitan que se preserve el lugar. Cada hallazgo puede contener una respuesta que otra familia espera.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-083.mp3"
+  },
+  {
+    "id": "noticia-084",
+    "title": "Una silla permanece vacía",
+    "category": "Alertas y personas ausentes",
+    "text": "Una familia conserva vacía la silla de una persona desaparecida. No conoce su paradero. Pide que la búsqueda continúe y que su ausencia no se vuelva parte del paisaje.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-084.mp3"
+  },
+  {
+    "id": "noticia-085",
+    "title": "Indicios en terreno baldío",
+    "category": "Hallazgos y cierre",
+    "text": "Durante una búsqueda se localizaron indicios en un terreno baldío. El colectivo solicita que se preserve la zona y que personal especializado realice las diligencias necesarias.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-085.mp3"
+  },
+  {
+    "id": "noticia-086",
+    "title": "Búsqueda en un pozo",
+    "category": "Hallazgos y cierre",
+    "text": "Un grupo de búsqueda llegó a un pozo después de recibir información sobre posibles restos. Las familias piden una revisión profesional y condiciones seguras para continuar.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-086.mp3"
+  },
+  {
+    "id": "noticia-087",
+    "title": "Lugar de búsqueda sin resguardo",
+    "category": "Hallazgos y cierre",
+    "text": "Familias denuncian que un lugar donde se encontraron indicios quedó sin resguardo suficiente. Temen que se pierda información y solicitan una intervención inmediata.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-087.mp3"
+  },
+  {
+    "id": "noticia-088",
+    "title": "Prendas encontradas",
+    "category": "Hallazgos y cierre",
+    "text": "Durante una jornada de búsqueda fueron encontradas prendas y objetos personales. Las familias piden que se documenten correctamente y que cualquier identificación se comunique con cuidado.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-088.mp3"
+  },
+  {
+    "id": "noticia-089",
+    "title": "Restos pendientes de identificación",
+    "category": "Hallazgos y cierre",
+    "text": "Se localizaron posibles restos humanos en un área de búsqueda. Aún deben ser examinados e identificados. Colectivos piden evitar conclusiones apresuradas y mantener informadas a las familias.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-089.mp3"
+  },
+  {
+    "id": "noticia-090",
+    "title": "Fosa localizada",
+    "category": "Hallazgos y cierre",
+    "text": "Se localizaron cuerpos en una fosa durante una búsqueda en las afueras de una comunidad. La zona fue señalada para su resguardo. Las familias esperan información y un proceso digno de identificación.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-090.mp3"
+  },
+  {
+    "id": "noticia-091",
+    "title": "Más de un punto de búsqueda",
+    "category": "Hallazgos y cierre",
+    "text": "Nuevos indicios obligaron a ampliar el perímetro de una búsqueda. El colectivo solicita personal y equipo. Cada punto requiere una revisión cuidadosa y la preservación de lo encontrado.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-091.mp3"
+  },
+  {
+    "id": "noticia-092",
+    "title": "Familias esperan resultados",
+    "category": "Hallazgos y cierre",
+    "text": "Familias esperan resultados de identificación después de un hallazgo. Dicen que no han recibido información suficiente. Piden acompañamiento, plazos claros y que se respete su derecho a saber.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-092.mp3"
+  },
+  {
+    "id": "noticia-093",
+    "title": "Restos sin identificar",
+    "category": "Hallazgos y cierre",
+    "text": "Un colectivo denuncia el rezago en la identificación de restos. Exige recursos y coordinación entre instituciones. Recuerda que detrás de cada registro puede haber una familia esperando una llamada.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-093.mp3"
+  },
+  {
+    "id": "noticia-094",
+    "title": "Búsqueda suspendida",
+    "category": "Hallazgos y cierre",
+    "text": "Una jornada de búsqueda fue suspendida por falta de condiciones de seguridad. Las familias piden protección para regresar. Temen que el tiempo vuelva a borrar las pistas.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-094.mp3"
+  },
+  {
+    "id": "noticia-095",
+    "title": "Hallazgo en una segunda fosa",
+    "category": "Hallazgos y cierre",
+    "text": "Durante la revisión de un terreno se localizó una segunda fosa. Se solicita preservar la zona y realizar una investigación completa. Las familias piden que el hallazgo no se reduzca a una cifra.",
+    "voice": "es-US-PalomaNeural",
+    "rate": "+5%",
+    "url": "assets/noticias/noticia-095.mp3"
+  },
+  {
+    "id": "noticia-096",
+    "title": "Objetos que alguien reconoce",
+    "category": "Hallazgos y cierre",
+    "text": "Entre los indicios encontrados hay objetos que podrían ser reconocidos por una familia. El colectivo pide un manejo digno y acompañamiento especializado antes de comunicar cualquier resultado.",
+    "voice": "es-US-AlonsoNeural",
+    "rate": "+1%",
+    "url": "assets/noticias/noticia-096.mp3"
+  },
+  {
+    "id": "noticia-097",
+    "title": "Ausencias que no terminan",
+    "category": "Hallazgos y cierre",
+    "text": "Después de la búsqueda, las familias regresaron con las fotografías de sus seres queridos. Algunas esperan resultados; otras, una nueva pista. Todas piden que nadie deje de buscar.",
+    "voice": "es-MX-DaliaNeural",
+    "rate": "+3%",
+    "url": "assets/noticias/noticia-097.mp3"
+  },
+  {
+    "id": "noticia-098",
+    "title": "¿Quién escucha a las familias?",
+    "category": "Hallazgos y cierre",
+    "text": "Al cierre de esta jornada, las madres buscadoras sostienen los retratos frente a las cámaras. No piden que sintamos su dolor por un momento. Piden verdad, justicia y que alguien les escuche.",
+    "voice": "es-MX-JorgeNeural",
+    "rate": "+0%",
+    "url": "assets/noticias/noticia-098.mp3"
+  }
+]

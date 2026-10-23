@@ -1,0 +1,590 @@
+[
+  {
+    "id": "noticia-001",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.07,
+    "bytes": 145196
+  },
+  {
+    "id": "noticia-002",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.57,
+    "bytes": 139148
+  },
+  {
+    "id": "noticia-003",
+    "voice": "es-US-PalomaNeural",
+    "duration": 9.46,
+    "bytes": 113804
+  },
+  {
+    "id": "noticia-004",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 11.21,
+    "bytes": 134828
+  },
+  {
+    "id": "noticia-005",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 10.66,
+    "bytes": 128204
+  },
+  {
+    "id": "noticia-006",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 12.89,
+    "bytes": 154988
+  },
+  {
+    "id": "noticia-007",
+    "voice": "es-US-PalomaNeural",
+    "duration": 10.66,
+    "bytes": 128204
+  },
+  {
+    "id": "noticia-008",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 11.74,
+    "bytes": 141164
+  },
+  {
+    "id": "noticia-009",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 10.58,
+    "bytes": 127340
+  },
+  {
+    "id": "noticia-010",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.5,
+    "bytes": 138284
+  },
+  {
+    "id": "noticia-011",
+    "voice": "es-US-PalomaNeural",
+    "duration": 9.94,
+    "bytes": 119564
+  },
+  {
+    "id": "noticia-012",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 11.45,
+    "bytes": 137708
+  },
+  {
+    "id": "noticia-013",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 10.49,
+    "bytes": 126188
+  },
+  {
+    "id": "noticia-014",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 10.75,
+    "bytes": 129356
+  },
+  {
+    "id": "noticia-015",
+    "voice": "es-US-PalomaNeural",
+    "duration": 13.01,
+    "bytes": 156428
+  },
+  {
+    "id": "noticia-016",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 13.13,
+    "bytes": 157868
+  },
+  {
+    "id": "noticia-017",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.77,
+    "bytes": 153548
+  },
+  {
+    "id": "noticia-018",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 12.86,
+    "bytes": 154700
+  },
+  {
+    "id": "noticia-019",
+    "voice": "es-US-PalomaNeural",
+    "duration": 10.27,
+    "bytes": 123596
+  },
+  {
+    "id": "noticia-020",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 13.22,
+    "bytes": 159020
+  },
+  {
+    "id": "noticia-021",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 10.56,
+    "bytes": 127052
+  },
+  {
+    "id": "noticia-022",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 12.62,
+    "bytes": 151820
+  },
+  {
+    "id": "noticia-023",
+    "voice": "es-US-PalomaNeural",
+    "duration": 9.24,
+    "bytes": 111212
+  },
+  {
+    "id": "noticia-024",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 10.54,
+    "bytes": 126764
+  },
+  {
+    "id": "noticia-025",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.07,
+    "bytes": 145196
+  },
+  {
+    "id": "noticia-026",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 13.27,
+    "bytes": 159596
+  },
+  {
+    "id": "noticia-027",
+    "voice": "es-US-PalomaNeural",
+    "duration": 9.79,
+    "bytes": 117836
+  },
+  {
+    "id": "noticia-028",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 10.94,
+    "bytes": 131660
+  },
+  {
+    "id": "noticia-029",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.5,
+    "bytes": 150380
+  },
+  {
+    "id": "noticia-030",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.3,
+    "bytes": 135980
+  },
+  {
+    "id": "noticia-031",
+    "voice": "es-US-PalomaNeural",
+    "duration": 10.44,
+    "bytes": 125612
+  },
+  {
+    "id": "noticia-032",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 10.63,
+    "bytes": 127916
+  },
+  {
+    "id": "noticia-033",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.6,
+    "bytes": 151532
+  },
+  {
+    "id": "noticia-034",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.4,
+    "bytes": 137132
+  },
+  {
+    "id": "noticia-035",
+    "voice": "es-US-PalomaNeural",
+    "duration": 10.39,
+    "bytes": 125036
+  },
+  {
+    "id": "noticia-036",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 11.38,
+    "bytes": 136844
+  },
+  {
+    "id": "noticia-037",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.22,
+    "bytes": 146924
+  },
+  {
+    "id": "noticia-038",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 12.24,
+    "bytes": 147212
+  },
+  {
+    "id": "noticia-039",
+    "voice": "es-US-PalomaNeural",
+    "duration": 10.68,
+    "bytes": 128492
+  },
+  {
+    "id": "noticia-040",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 13.22,
+    "bytes": 159020
+  },
+  {
+    "id": "noticia-041",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 11.21,
+    "bytes": 134828
+  },
+  {
+    "id": "noticia-042",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.26,
+    "bytes": 135404
+  },
+  {
+    "id": "noticia-043",
+    "voice": "es-US-PalomaNeural",
+    "duration": 13.15,
+    "bytes": 158156
+  },
+  {
+    "id": "noticia-044",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 12.07,
+    "bytes": 145196
+  },
+  {
+    "id": "noticia-045",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.89,
+    "bytes": 154988
+  },
+  {
+    "id": "noticia-046",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.78,
+    "bytes": 141740
+  },
+  {
+    "id": "noticia-047",
+    "voice": "es-US-PalomaNeural",
+    "duration": 11.04,
+    "bytes": 132812
+  },
+  {
+    "id": "noticia-048",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 14.47,
+    "bytes": 173996
+  },
+  {
+    "id": "noticia-049",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 11.57,
+    "bytes": 139148
+  },
+  {
+    "id": "noticia-050",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 13.92,
+    "bytes": 167372
+  },
+  {
+    "id": "noticia-051",
+    "voice": "es-US-PalomaNeural",
+    "duration": 11.74,
+    "bytes": 141164
+  },
+  {
+    "id": "noticia-052",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 14.5,
+    "bytes": 174284
+  },
+  {
+    "id": "noticia-053",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.89,
+    "bytes": 154988
+  },
+  {
+    "id": "noticia-054",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.64,
+    "bytes": 140012
+  },
+  {
+    "id": "noticia-055",
+    "voice": "es-US-PalomaNeural",
+    "duration": 11.86,
+    "bytes": 142604
+  },
+  {
+    "id": "noticia-056",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 14.4,
+    "bytes": 173132
+  },
+  {
+    "id": "noticia-057",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 11.45,
+    "bytes": 137708
+  },
+  {
+    "id": "noticia-058",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.38,
+    "bytes": 136844
+  },
+  {
+    "id": "noticia-059",
+    "voice": "es-US-PalomaNeural",
+    "duration": 9.46,
+    "bytes": 113804
+  },
+  {
+    "id": "noticia-060",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 12.65,
+    "bytes": 152108
+  },
+  {
+    "id": "noticia-061",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 9.91,
+    "bytes": 119276
+  },
+  {
+    "id": "noticia-062",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 12.91,
+    "bytes": 155276
+  },
+  {
+    "id": "noticia-063",
+    "voice": "es-US-PalomaNeural",
+    "duration": 11.16,
+    "bytes": 134252
+  },
+  {
+    "id": "noticia-064",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 13.49,
+    "bytes": 162188
+  },
+  {
+    "id": "noticia-065",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.24,
+    "bytes": 147212
+  },
+  {
+    "id": "noticia-066",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 12.12,
+    "bytes": 145772
+  },
+  {
+    "id": "noticia-067",
+    "voice": "es-US-PalomaNeural",
+    "duration": 9.98,
+    "bytes": 120140
+  },
+  {
+    "id": "noticia-068",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 13.78,
+    "bytes": 165644
+  },
+  {
+    "id": "noticia-069",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 11.62,
+    "bytes": 139724
+  },
+  {
+    "id": "noticia-070",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 14.02,
+    "bytes": 168524
+  },
+  {
+    "id": "noticia-071",
+    "voice": "es-US-PalomaNeural",
+    "duration": 11.42,
+    "bytes": 137420
+  },
+  {
+    "id": "noticia-072",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 11.9,
+    "bytes": 143180
+  },
+  {
+    "id": "noticia-073",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.67,
+    "bytes": 152396
+  },
+  {
+    "id": "noticia-074",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 13.49,
+    "bytes": 162188
+  },
+  {
+    "id": "noticia-075",
+    "voice": "es-US-PalomaNeural",
+    "duration": 11.06,
+    "bytes": 133100
+  },
+  {
+    "id": "noticia-076",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 12.94,
+    "bytes": 155564
+  },
+  {
+    "id": "noticia-077",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 13.22,
+    "bytes": 159020
+  },
+  {
+    "id": "noticia-078",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 13.92,
+    "bytes": 167372
+  },
+  {
+    "id": "noticia-079",
+    "voice": "es-US-PalomaNeural",
+    "duration": 12.26,
+    "bytes": 147500
+  },
+  {
+    "id": "noticia-080",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 13.03,
+    "bytes": 156716
+  },
+  {
+    "id": "noticia-081",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 12.46,
+    "bytes": 149804
+  },
+  {
+    "id": "noticia-082",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 12.43,
+    "bytes": 149516
+  },
+  {
+    "id": "noticia-083",
+    "voice": "es-US-PalomaNeural",
+    "duration": 11.06,
+    "bytes": 133100
+  },
+  {
+    "id": "noticia-084",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 12.6,
+    "bytes": 151532
+  },
+  {
+    "id": "noticia-085",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 11.3,
+    "bytes": 135980
+  },
+  {
+    "id": "noticia-086",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.18,
+    "bytes": 134540
+  },
+  {
+    "id": "noticia-087",
+    "voice": "es-US-PalomaNeural",
+    "duration": 9.36,
+    "bytes": 112652
+  },
+  {
+    "id": "noticia-088",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 12.6,
+    "bytes": 151532
+  },
+  {
+    "id": "noticia-089",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 13.2,
+    "bytes": 158732
+  },
+  {
+    "id": "noticia-090",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 13.85,
+    "bytes": 166508
+  },
+  {
+    "id": "noticia-091",
+    "voice": "es-US-PalomaNeural",
+    "duration": 11.35,
+    "bytes": 136556
+  },
+  {
+    "id": "noticia-092",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 14.14,
+    "bytes": 169964
+  },
+  {
+    "id": "noticia-093",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 13.18,
+    "bytes": 158444
+  },
+  {
+    "id": "noticia-094",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 11.93,
+    "bytes": 143468
+  },
+  {
+    "id": "noticia-095",
+    "voice": "es-US-PalomaNeural",
+    "duration": 12.07,
+    "bytes": 145196
+  },
+  {
+    "id": "noticia-096",
+    "voice": "es-US-AlonsoNeural",
+    "duration": 13.22,
+    "bytes": 159020
+  },
+  {
+    "id": "noticia-097",
+    "voice": "es-MX-DaliaNeural",
+    "duration": 13.01,
+    "bytes": 156428
+  },
+  {
+    "id": "noticia-098",
+    "voice": "es-MX-JorgeNeural",
+    "duration": 13.39,
+    "bytes": 161036
+  }
+]
