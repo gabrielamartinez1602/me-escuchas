@@ -16,3 +16,5 @@ Las noticias solo comienzan al tocar su esfera roja o pulsar Repetir. Acercarse 
 Prioridad de voces: al tocar otra esfera, las noticias previas bajan suavemente de volumen sin cortarse. La selección más reciente queda al frente; al terminar, la anterior recupera su nivel. Se limita la aceleración de las voces para conservar claridad.
 
 Alerta Ámber: introducción «En esta recreación de una» retirada mediante recorte local de la grabación existente, sin servicios externos ni regeneración de voz.
+
+Créditos finales en BD Terminal, centrados al pie con margen para el área segura del celular.
